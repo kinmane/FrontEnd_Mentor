@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Signup Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,500i,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <main>
+    <section class="promotion">
+      <h1 class="text-bold">
+        Aprenda a codificar<br> observando os outros
+      </h1>
+      <h2 class="text-medium text-default lh-default">
+        Veja como desenvolvedores experientes resolvem problemas em tempo real. Assistir a tutoriais com script é ótimo, mas entender como os desenvolvedores pensam é inestimável.
+      </h2>
+    </section>
+    <section class="signup">
+      <h1 class="pricing text-regular">
+        <span class="text-bold">Experimente gratuitamente 7 dias</span> e depois R$ 20/mês.
+      </h1>
+      <form onsubmit="event.preventDefault(); validateForm();">
+        <div class="input-field">
+          <input type="text" id="fname" placeholder="Nome">
+          <p class="error-msg text-medium">O nome não pode ficar vazio</p>
+        </div>
+        <div class="input-field">
+          <input type="text" id="lname" placeholder="Sobrenome">
+          <p class="error-msg text-medium">O sobrenome não pode ficar vazio</p>
+        </div>
+        <div class="input-field">
+          <input type="text" id="email" placeholder="Endereço de email">
+          <p class="error-msg text-medium">Parece que isso não é um e-mail</p>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password" placeholder="Senha">
+          <p class="error-msg text-medium">A senha não pode estar vazia</p>
+        </div>
+        <button class="btn cta submit">
+          Reivindique sua avaliação gratuita
+        </button>
+        <p class="policy text-medium">
+          Ao clicar no botão, você concorda com nossos <span class="terms text-bold">Termos e Serviços</span>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by Frontend Mentor. Coded by <a href="https://github.com/Kinmane">Gabriel Souza</a>.
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
